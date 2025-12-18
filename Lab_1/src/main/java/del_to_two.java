@@ -4,8 +4,8 @@ import static java.lang.Math.*;
 public class del_to_two {
     public static void main(String[] args) {
         double[] mas = del_on_two(7, 11);
-        out.printf("Мнимальное x на промежутке: %f%n", mas[1]);
-        out.printf("Mинимальное значение f(x) на промежутке: %f%n", mas[2]);
+        out.printf("Мнимальное x на промежутке: %.8f%n", mas[1]);
+        out.printf("Mинимальное значение f(x) на промежутке: %.8f%n", mas[2]);
         out.printf("Количество итераций: %.0f%n", mas[0]);
     }
 

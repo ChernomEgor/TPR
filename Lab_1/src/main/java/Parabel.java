@@ -5,8 +5,8 @@ public class Parabel {
     public static void main(String[] args) {
 //        out.println(fi(7)+ fi(11));
         double[] mas = minimise(7, 11);
-        out.printf("Мнимальное x на промежутке: %f%n", mas[1]);
-        out.printf("Mинимальное значение f(x) на промежутке: %f%n", mas[2]);
+        out.printf("Мнимальное x на промежутке: %.8f%n", mas[1]);
+        out.printf("Mинимальное значение f(x) на промежутке: %.8f%n", mas[2]);
         out.printf("Количество итераций: %.0f%n", mas[0]);
     }
     public static double f(double x) {
@@ -25,7 +25,7 @@ public class Parabel {
     }
     public static double[] minimise(double a, double b){
         double eps = pow(10, -6);
-        double xm = 9;
+        double xm = a;
         double xm1 = minx(xm);
         double iteration = 1;
         while (abs(f(xm)-f(xm1))>eps){

@@ -5,8 +5,8 @@ public class Kosatel {
     public static void main(String[] args) {
 //        out.println(fi(7)+ fi(11));
         double[] mas = minimise(7, 11);
-        out.printf("Мнимальное x на промежутке: %f%n", mas[1]);
-        out.printf("Mинимальное значение f(x) на промежутке: %f%n", mas[2]);
+        out.printf("Мнимальное x на промежутке: %.8f%n", mas[1]);
+        out.printf("Mинимальное значение f(x) на промежутке: %.8f%n", mas[2]);
         out.printf("Количество итераций: %.0f%n", mas[0]);
     }
 
